@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0791C9D1-3852-4940-8DA3-094A79C99B57}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Tyuiu.ChurinDV.Sprint1.Task1.V13</RootNamespace>
-    <AssemblyName>Tyuiu.ChurinDV.Sprint1.Task1.V13</AssemblyName>
+    <ProjectGuid>{FF76725E-A9B8-440A-AEDB-BB864B0EA180}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tyuiu.ChurinDV.Sprint1.Task1.V13.Lib</RootNamespace>
+    <AssemblyName>Tyuiu.ChurinDV.Sprint1.Task1.V13.Lib</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,19 +39,13 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="tyuiu.cources.programming.interfaces">
+      <HintPath>..\..\DLL\tyuiu.cources.programming.interfaces.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="DataService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.ChurinDV.Sprint1.Task1.V13.Lib\Tyuiu.ChurinDV.Sprint1.Task1.V13.Lib.csproj">
-      <Project>{ff76725e-a9b8-440a-aedb-bb864b0ea180}</Project>
-      <Name>Tyuiu.ChurinDV.Sprint1.Task1.V13.Lib</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
