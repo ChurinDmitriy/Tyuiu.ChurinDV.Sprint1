@@ -24,7 +24,7 @@ namespace Tyuiu.ChurinDV.Sprint1.Task6.V5.Test
                     res += (word + " ");
                 }
             }
-            string wait = "казак шалаш";
+            string wait = "казак шалаш ";
             Assert.AreEqual(wait, res);
         }
     }
